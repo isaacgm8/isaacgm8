@@ -3,7 +3,7 @@ name: Update README
 on:
   schedule:
     - cron: "0 * * * *"  # Se ejecuta cada hora
-  workflow_dispatch:  # Permite ejecutar manualmente
+  workflow_dispatch:  # Permite ejecución manual
 
 jobs:
   update-readme:
@@ -13,5 +13,7 @@ jobs:
       - uses: Readme-Workflows/recent-activity@v2.4.1
         with:
           GH_USERNAME: "isaacgm8"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Agregar este parámetro
           CONFIG_FILE: ".github/recent-activity.config.yml"
+
 
