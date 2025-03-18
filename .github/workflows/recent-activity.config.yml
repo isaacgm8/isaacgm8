@@ -1,8 +1,10 @@
-github_user: isaacgm8
-include:
-  - PushEvent
-  - PullRequestEvent
-  - IssuesEvent
-  - ForkEvent
-  - WatchEvent
+# .github/recent-activity.config.yml
+# Example configuration for recent-activity action
+activity:
+  - type: issue
+    action: opened
+    label: bug
+  - type: pull_request
+    action: closed
+    merged: true
 
