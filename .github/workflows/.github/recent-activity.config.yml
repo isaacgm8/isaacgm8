@@ -1,0 +1,9 @@
+# .github/recent-activity.config.yml
+activity:
+  - type: push
+    branches:
+      - main
+  - type: issue
+    actions:
+      - opened
+      - closed
