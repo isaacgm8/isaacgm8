@@ -1,0 +1,8 @@
+github_user: isaacgm8
+include:
+  - PushEvent
+  - PullRequestEvent
+  - IssuesEvent
+  - ForkEvent
+  - WatchEvent
+
